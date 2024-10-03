@@ -74,15 +74,24 @@ input[type="text"] {
     width: 300px;
 }
 
+/* Merchandise paigutuse parandamine */
 .merch-grid {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .merch-item {
-    margin: 10px;
+    width: 300px;
     text-align: center;
+    margin: 10px;
+}
+
+.merch-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery img {
