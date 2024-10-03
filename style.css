@@ -1,20 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
+/* Põhistiilid */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Heledam taust */
+    color: #000000;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #00CCCC; /* Auto värviga sobiv türkiissinine */
+    color: #ffffff;
 }
 
 h1 {
-    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FF66CC; /* Roosa toon */
+}
+
+p {
+    font-size: 1.2em;
 }
 
 section {
@@ -22,15 +33,40 @@ section {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    color: #FF66CC; /* Roosa toon */
+}
+
 button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #333;
+    background-color: #FF66CC;
     color: #fff;
     border: none;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #cc5599;
+}
+
+input {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+img {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
