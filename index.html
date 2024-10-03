@@ -17,37 +17,35 @@
     <!-- Annetused -->
     <section id="annetused">
         <h2>Toeta meie driftitegevust</h2>
-        <p style="text-align: center;">
-            Konto number: 
+        <div class="annetus-container">
+            <p>Konto number:</p>
             <input type="text" id="kontoNumber" value="EE752200221088460276" readonly>
             <button onclick="kopeeriKontoNumber()">Kopeeri</button>
-        </p>
+        </div>
 
-        <p style="text-align: center;">
-            Saaja nimi: 
+        <div class="annetus-container">
+            <p>Saaja nimi:</p>
             <input type="text" id="saajaNimi" value="Driftworks MTÜ" readonly>
             <button onclick="kopeeriSaajaNimi()">Kopeeri</button>
-        </p>
+        </div>
     </section>
 
     <!-- Merchandise -->
     <section id="merchandise">
         <h2>Merchandise</h2>
+        <div class="merch-item">
+            <img src="images/pusa30eur.jpg" alt="Pusa" style="width: 300px;">
+            <p>Pusa: 30€</p>
+            <p>Särk: 10€</p>
+        </div>
         <div class="merch-grid">
-            <div class="merch-item">
-                <img src="images/pusa30eur.jpg" alt="Pusa" style="width: 300px;">
-                <p>Pusa: 30€</p>
-            </div>
-            <div class="merch-item">
-                <p>Särk: 10€</p>
-            </div>
             <div class="merch-item">
                 <img src="images/rongas.jpg" alt="Kõrvarõngad" style="width: 300px;">
                 <p>Kõrvarõngad: 10€</p>
             </div>
             <div class="merch-item">
-                <img src="images/palsam1.jpg" alt="Palsam" style="width: 300px;">
-                <p>Palsam: 5€</p>
+                <img src="images/palsam1.jpg" alt="Huulepalsam" style="width: 300px;">
+                <p>Huulepalsam: 5€</p>
             </div>
         </div>
         <p>Pakiautomaadiga saatmine saadaval.</p>
@@ -64,28 +62,24 @@
         </div>
     </section>
 
-    <!-- Lihtne kontaktivorm -->
+    <!-- Turvaline kontaktivorm -->
     <section id="kontaktivorm">
         <h2>Tellimuse vorm</h2>
         <form action="mailto:Driftworksmtu@gmail.com" method="post" enctype="text/plain">
             <p>
-                <label for="nimi">Tellija nimi:</label><br>
+                <label for="nimi">Nimi:</label><br>
                 <input type="text" id="nimi" name="nimi" required>
             </p>
             <p>
-                <label for="email">Kontakt (email või telefon):</label><br>
-                <input type="text" id="email" name="email" required>
+                <label for="kontakt">Kontakt (Email ja Telefon):</label><br>
+                <input type="text" id="kontakt" name="kontakt" required>
             </p>
             <p>
-                <label for="tellimus">Mida soovid tellida (Särk/Pusa/Kõrvarõngad/Palsam):</label><br>
-                <input type="text" id="tellimus" name="tellimus" required>
+                <label for="soov">Mida soovid tellida:</label><br>
+                <textarea id="soov" name="soov" required></textarea>
             </p>
             <p>
-                <label for="pakiautomaat">Millisesse pakiautomaati soovid saada?</label><br>
-                <input type="text" id="pakiautomaat" name="pakiautomaat" required>
-            </p>
-            <p>
-                <button type="submit">Saada tellimus</button>
+                <button type="submit">Esita päring</button>
             </p>
         </form>
     </section>
