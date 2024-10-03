@@ -53,33 +53,21 @@ input, textarea {
     text-align: center;
 }
 
-input[type="text"], textarea {
-    max-width: 300px;
-    display: block;
-}
-
-/* Paiguta annetuste osa */
+/* Konto number ja saaja nimi */
 .annetus-container {
     display: flex;
-    justify-content: flex-start; /* Silte ja sisendkaste tihedamalt kokku */
+    flex-direction: column;  /* Sildid kastide kohale */
     align-items: center;
-    gap: 10px;
     margin-bottom: 10px;
 }
 
-.annetus-container p {
-    margin: 0;
-    font-size: 1em;
-    text-align: right;
-    width: 150px; /* Kindla laiusega sildid */
-}
-
-input[type="text"] {
+.annetus-container input {
     width: 250px;
+    margin-bottom: 5px; /* Lisaruum kopeerimisnupu jaoks */
 }
 
-button {
-    margin-left: 10px;
+.annetus-container button {
+    margin-top: 5px;
 }
 
 /* Merchandise paigutus */
@@ -102,12 +90,14 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Galerii */
 .gallery img {
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Taastame kontaktivormi lihtsa stiili */
 #kontaktivorm {
     padding: 20px;
     background-color: #f7f7f7;
