@@ -55,7 +55,6 @@ input, textarea {
 
 input[type="text"], textarea {
     max-width: 300px;
-    margin: 0 auto;
     display: block;
 }
 
@@ -70,13 +69,14 @@ input[type="text"], textarea {
 
 .annetus-container p {
     margin: 0;
-    font-size: 1em; /* Väiksem font */
-    text-align: right; /* Parempoolne joondus, et oleks kastide kõrval */
-    min-width: 100px; /* Tagab, et tekstid on ühepikkused */
+    font-size: 1em;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 input[type="text"] {
-    width: 200px;
+    width: 250px;
 }
 
 button {
