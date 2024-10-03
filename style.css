@@ -46,29 +46,38 @@ button:hover {
     background-color: #cc5599;
 }
 
-/* Sisendväljadele ja nuppudele keskjoondus */
-#annetused p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Lisatud vahe nuppude ja väljade vahele */
-}
-
-input {
+input, textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    text-align: center; /* Keskjoondus sisendväljale */
+    text-align: center;
+}
+
+input[type="text"], textarea {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.annetus-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.annetus-container p {
+    margin: 0;
 }
 
 input[type="text"] {
-    max-width: 400px; /* Määrame sisendväljale maksimaalse laiuse */
+    width: 300px;
 }
 
 .merch-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .merch-item {
@@ -100,8 +109,6 @@ label {
     color: #333;
 }
 
-input[type="text"] {
-    max-width: 400px;
-    margin: 0 auto;
-    display: block;
+textarea {
+    height: 100px;
 }
