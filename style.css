@@ -119,3 +119,16 @@ label {
 textarea {
     height: 100px;
 }
+
+button[type="submit"] {
+    background-color: #FF66CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc5599;
+}
