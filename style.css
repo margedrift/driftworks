@@ -46,12 +46,23 @@ button:hover {
     background-color: #cc5599;
 }
 
-input, textarea {
-    width: 100%;
+/* Sisendväljadele ja nuppudele keskjoondus */
+#annetused p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Lisatud vahe nuppude ja väljade vahele */
+}
+
+input {
     padding: 10px;
-    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    text-align: center; /* Keskjoondus sisendväljale */
+}
+
+input[type="text"] {
+    max-width: 400px; /* Määrame sisendväljale maksimaalse laiuse */
 }
 
 .merch-grid {
@@ -74,3 +85,23 @@ input, textarea {
 #kontaktivorm {
     padding: 20px;
     background-color: #f7f7f7;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
