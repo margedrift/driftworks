@@ -58,10 +58,10 @@ input[type="text"], textarea {
     display: block;
 }
 
-/* Paiguta annetuste osa paremini */
+/* Paiguta annetuste osa */
 .annetus-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Silte ja sisendkaste tihedamalt kokku */
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
@@ -70,9 +70,8 @@ input[type="text"], textarea {
 .annetus-container p {
     margin: 0;
     font-size: 1em;
-    text-align: left;
-    display: flex;
-    align-items: center;
+    text-align: right;
+    width: 150px; /* Kindla laiusega sildid */
 }
 
 input[type="text"] {
@@ -83,7 +82,7 @@ button {
     margin-left: 10px;
 }
 
-/* Merchandise paigutuse parandamine */
+/* Merchandise paigutus */
 .merch-grid {
     display: flex;
     justify-content: center;
