@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Heledam taust */
+    background-color: #ffffff;
     color: #000000;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #00CCCC; /* Auto värviga sobiv türkiissinine */
+    background-color: #00CCCC;
     color: #ffffff;
 }
 
@@ -29,7 +29,7 @@ section {
 
 h2 {
     font-size: 2em;
-    color: #FF66CC; /* Roosa toon */
+    color: #FF66CC;
 }
 
 button {
@@ -46,7 +46,7 @@ button:hover {
     background-color: #cc5599;
 }
 
-input, select, textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -54,11 +54,23 @@ input, select, textarea {
     border-radius: 4px;
 }
 
+.merch-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .merch-item {
-    margin-bottom: 20px;
+    margin: 10px;
+    text-align: center;
 }
 
 .gallery img {
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#kontaktivorm {
+    padding: 20px;
+    background-color: #f7f7f7;
