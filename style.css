@@ -36,7 +36,7 @@ button {
     background-color: #FF66CC;
     color: #fff;
     border: none;
-    padding: 8px 15px; /* Kitsendasin nuppe */
+    padding: 8px 15px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
@@ -46,10 +46,12 @@ button:hover {
     background-color: #cc5599;
 }
 
-input {
-    border: 1px solid #000;
-    padding: 5px;
-    border-radius: 5px;
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .merch-item {
@@ -59,12 +61,4 @@ input {
 .gallery img {
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000000;
-    color: #ffffff;
-}
+    box-shadow: 0 4px 8px
