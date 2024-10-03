@@ -36,4 +36,61 @@
         <div class="merch-grid">
             <div class="merch-item">
                 <img src="images/pusa30eur.jpg" alt="Pusa" style="width: 300px;">
-                <p>P
+                <p>Pusa: 30€</p>
+            </div>
+            <div class="merch-item">
+                <p>Särk: 10€</p>
+            </div>
+            <div class="merch-item">
+                <img src="images/rongas.jpg" alt="Kõrvarõngad" style="width: 300px;">
+                <p>Kõrvarõngad: 10€</p>
+            </div>
+            <div class="merch-item">
+                <img src="images/palsam1.jpg" alt="Palsam" style="width: 300px;">
+                <p>Palsam: 5€</p>
+            </div>
+        </div>
+        <p>Pakiautomaadiga saatmine saadaval.</p>
+    </section>
+
+    <!-- Driftifotod (Galerii) -->
+    <section id="galerii">
+        <h2>Galerii</h2>
+        <div class="gallery">
+            <img src="images/_MG_1338.jpg" alt="Drift Auto 1" style="width: 300px;">
+            <img src="images/_MG_2998.jpg" alt="Drift Auto 2" style="width: 300px;">
+            <img src="images/kamp.jpg" alt="Drift Kamp" style="width: 300px;">
+            <img src="images/karikas.jpg" alt="Karikas" style="width: 300px;">
+        </div>
+    </section>
+
+    <!-- Lihtne kontaktivorm -->
+    <section id="kontaktivorm">
+        <h2>Tellimuse vorm</h2>
+        <form action="mailto:Driftworksmtu@gmail.com" method="post" enctype="text/plain">
+            <p>
+                <label for="nimi">Tellija nimi:</label><br>
+                <input type="text" id="nimi" name="nimi" required>
+            </p>
+            <p>
+                <label for="email">Kontakt (email või telefon):</label><br>
+                <input type="text" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="tellimus">Mida soovid tellida (Särk/Pusa/Kõrvarõngad/Palsam):</label><br>
+                <input type="text" id="tellimus" name="tellimus" required>
+            </p>
+            <p>
+                <label for="pakiautomaat">Millisesse pakiautomaati soovid saada?</label><br>
+                <input type="text" id="pakiautomaat" name="pakiautomaat" required>
+            </p>
+            <p>
+                <button type="submit">Saada tellimus</button>
+            </p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
