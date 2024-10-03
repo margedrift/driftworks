@@ -54,7 +54,7 @@ input, textarea {
 }
 
 input[type="text"], textarea {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     display: block;
 }
@@ -72,7 +72,7 @@ input[type="text"] {
     width: 300px;
 }
 
-/* Merchandise paigutuse parandamine */
+/* Merchandise piltide korrektne paigutus */
 .merch-grid {
     display: flex;
     justify-content: center;
