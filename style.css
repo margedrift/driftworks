@@ -59,20 +59,28 @@ input[type="text"], textarea {
     display: block;
 }
 
+/* Paiguta annetuste osa keskele */
 .annetus-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-    text-align: center;
+}
+
+.annetus-container p {
+    margin: 0;
 }
 
 input[type="text"] {
-    width: 300px;
+    width: 200px;
 }
 
-/* Merchandise piltide korrektne paigutus */
+button {
+    margin-left: 10px;
+}
+
+/* Merchandise paigutuse parandamine */
 .merch-grid {
     display: flex;
     justify-content: center;
