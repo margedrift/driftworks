@@ -1,13 +1,15 @@
 function kopeeriKontoNumber() {
-    var copyText = document.getElementById("kontoNumber");
-    copyText.select();
+    var kontoNumber = document.getElementById("kontoNumber");
+    kontoNumber.select();
+    kontoNumber.setSelectionRange(0, 99999); /* Mobiili jaoks */
     document.execCommand("copy");
-    alert("Konto number kopeeritud: " + copyText.value);
+    alert("Konto number kopeeritud: " + kontoNumber.value);
 }
 
 function kopeeriSaajaNimi() {
-    var copyText = document.getElementById("saajaNimi");
-    copyText.select();
+    var saajaNimi = document.getElementById("saajaNimi");
+    saajaNimi.select();
+    saajaNimi.setSelectionRange(0, 99999); /* Mobiili jaoks */
     document.execCommand("copy");
-    alert("Saaja nimi kopeeritud: " + copyText.value);
+    alert("Saaja nimi kopeeritud: " + saajaNimi.value);
 }
