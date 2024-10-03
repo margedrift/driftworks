@@ -10,7 +10,7 @@
 
     <!-- Avaleht -->
     <header>
-        <img src="Marge_logo-valge_nimi.png" alt="Marge Drift Logo" style="width: 150px;">
+        <img src="images/Marge_logo-valge_nimi.png" alt="Marge Drift Logo" style="width: 150px;">
         <p>Drifting is my therapy, and my car is my couch.</p>
     </header>
 
@@ -32,18 +32,18 @@
     <section id="merchandise">
         <h2>Merchandise</h2>
         <div class="merch-item">
-            <img src="pusa30eur.jpg" alt="Pusa" style="width: 300px;">
+            <img src="images/pusa30eur.jpg" alt="Pusa" style="width: 300px;">
             <p>Pusa: 30€</p>
         </div>
         <div class="merch-item">
             <p>Särk: 10€</p>
         </div>
         <div class="merch-item">
-            <img src="rongas.jpg" alt="Kõrvarõngad" style="width: 300px;">
+            <img src="images/rongas.jpg" alt="Kõrvarõngad" style="width: 300px;">
             <p>Kõrvarõngad: 10€</p>
         </div>
         <div class="merch-item">
-            <img src="palsam1.jpg" alt="Palsam" style="width: 300px;">
+            <img src="images/palsam1.jpg" alt="Palsam" style="width: 300px;">
             <p>Palsam: 5€</p>
         </div>
         <p>Pakiautomaadiga saatmine saadaval.</p>
@@ -53,11 +53,46 @@
     <section id="galerii">
         <h2>Galerii</h2>
         <div class="gallery">
-            <img src="_MG_1338.jpg" alt="Drift Auto 1" style="width: 300px;">
-            <img src="_MG_2998.jpg" alt="Drift Auto 2" style="width: 300px;">
-            <img src="kamp.jpg" alt="Drift Kamp" style="width: 300px;">
-            <img src="karikas.jpg" alt="Karikas" style="width: 300px;">
+            <img src="images/_MG_1338.jpg" alt="Drift Auto 1" style="width: 300px;">
+            <img src="images/_MG_2998.jpg" alt="Drift Auto 2" style="width: 300px;">
+            <img src="images/kamp.jpg" alt="Drift Kamp" style="width: 300px;">
+            <img src="images/karikas.jpg" alt="Karikas" style="width: 300px;">
         </div>
+    </section>
+
+    <!-- Kontaktivorm tellimuse jaoks -->
+    <section id="kontaktivorm">
+        <h2>Tellimuse vorm</h2>
+        <form name="tellimus" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="tellimus">
+            
+            <p>
+                <label for="nimi">Nimi:</label><br>
+                <input type="text" id="nimi" name="nimi" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="toode">Toode (Särk/Pusa):</label><br>
+                <select id="toode" name="toode" required>
+                    <option value="Särk">Särk</option>
+                    <option value="Pusa">Pusa</option>
+                </select>
+            </p>
+            <p>
+                <label for="suurus">Suurus (S/M/L/XL):</label><br>
+                <input type="text" id="suurus" name="suurus" required>
+            </p>
+            <p>
+                <label for="aadress">Saatmise aadress:</label><br>
+                <textarea id="aadress" name="aadress" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Saada tellimus</button>
+            </p>
+        </form>
     </section>
 
     <script src="script.js"></script>
