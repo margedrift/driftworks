@@ -59,7 +59,7 @@ input[type="text"], textarea {
     display: block;
 }
 
-/* Paiguta annetuste osa keskele */
+/* Paiguta annetuste osa paremini */
 .annetus-container {
     display: flex;
     justify-content: center;
@@ -70,6 +70,9 @@ input[type="text"], textarea {
 
 .annetus-container p {
     margin: 0;
+    font-size: 1em; /* Väiksem font */
+    text-align: right; /* Parempoolne joondus, et oleks kastide kõrval */
+    min-width: 100px; /* Tagab, et tekstid on ühepikkused */
 }
 
 input[type="text"] {
